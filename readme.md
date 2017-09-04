@@ -17,6 +17,6 @@
     axios.post('/api/user/sayHello')
     .then(function (response) {
         console.log(response.response.data) // will display {response : "Hello"}
-    }
+    })
 <script>
 ```
