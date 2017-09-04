@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^http://back.mblq.co$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^http://www.back.mblq.co/public/$
+RewriteCond %{REQUEST_URI} !project/public/
+RewriteRule (.*) /project/public/$1 [L]
